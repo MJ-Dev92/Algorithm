@@ -96,21 +96,21 @@
 // solution(s);
 
 
-function solution(s){
-	let answer="";
-  let splitedS = s.split(' ');
-  let num = [];
+// function solution(s){
+// 	let answer="";
+//   let splitedS = s.split(' ');
+//   let num = [];
 
-  for (let i = 0; i < splitedS.length; ++i) {
-    for (let j = 2; j < splitedS[i]; ++j) {
-      if (splitedS[i] % j === 0) {
-        num.push(splitedS[i]);
-        splitedS.splice(i, 1);
-      } 
-    }
-  }
-  return  answer = String(Math.min(...num)) + " " + String(Math.max(...splitedS));
+//   for (let i = 0; i < splitedS.length; ++i) {
+//     for (let j = 2; j < splitedS[i]; ++j) {
+//       if (splitedS[i] % j === 0) {
+//         num.push(splitedS[i]);
+//         splitedS.splice(i, 1);
+//       } 
+//     }
+//   }
+//   return  answer = String(Math.min(...num)) + " " + String(Math.max(...splitedS));
 
-}
-let s = "97 75 88 99 95 92 73";
-console.log(solution(s))
+// }
+// let s = "97 75 88 99 95 92 73";
+// console.log(solution(s))

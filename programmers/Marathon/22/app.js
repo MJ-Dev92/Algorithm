@@ -1,3 +1,5 @@
+// 프로그래머스 숫자 문자열과 영단어
+
 let s = "one4seveneight";
 
 solution(s);
