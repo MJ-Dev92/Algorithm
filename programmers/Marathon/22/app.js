@@ -5,7 +5,7 @@ let s = "one4seveneight";
 solution(s);
 
 function solution(s) {
-  const stringToNum = [
+  let numbers = [
     "zero",
     "one",
     "two",
@@ -17,8 +17,9 @@ function solution(s) {
     "eight",
     "nine",
   ];
-  for (let i = 0; i < 10; i++) {
-    s = s.split(stringToNum[i]).join(i);
+  for (let i = 0; i < 10; ++i) {
+    let arr = s.split(numbers[i])
+    s = arr.join(i);
   }
-  console.log(parseInt(s));
+  console.log(+s);
 }
